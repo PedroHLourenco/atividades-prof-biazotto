@@ -1,0 +1,144 @@
+Atividade Design Pattern Adapter
+
+1 - Explique com suas palavras o que é o padrão Adapter e qual problema ele resolve.
+
+O padrão Adapter é uma solução de design que permite
+que duas interfaces incompatíveis trabalhem juntas.
+Ele "adapta" uma classe existente para que ela tenha a 
+interface que o cliente espera, resolvendo o problema
+de incompatibilidade entre classes.
+
+
+2 - Cite um exemplo do mundo real que ilustra o funcionamento do padrão Adapter.
+
+Um exemplo do mundo real é o adaptador de tomada:
+quando viajamos para outro país e o padrão da tomada 
+é diferente, usamos um adaptador para conectar nosso 
+carregador de celular sem precisar trocar o carregador.
+
+
+3 - Quais são os participantes principais do padrão Adapter?
+
+ - Client: Classe que usa o Target.
+ - Target: Interface esperada pelo Client.
+ - Adapter: Classe que implementa Target e traduz chamadas para o Adaptee.
+ - Adaptee: Classe existente com uma interface diferente.
+
+
+4 - Desenhe o diagrama de classes UML do padrão Adapter (na forma de classe).
+
++-----------------+           +-----------------+
+|   Client        |           |    Target       |
+|-----------------|           |-----------------|
+| - target: Target|---------> | + request()     |
++-----------------+           +-----------------+
+                                     ^
+                                     |
+                          +--------------------+
+                          |    Adapter         |
+                          |--------------------|
+                          | - adaptee: Adaptee |
+                          | + request()        |
+                          +--------------------+
+                                     |
+                          +---------------------+
+                          |    Adaptee          |
+                          |---------------------|
+                          | + specificRequest() |
+                          +---------------------+
+
+
+5 - Liste vantagens e desvantagens do padrão Adapter.
+
+Vantagens:
+ - Permite reutilizar código existente.
+ - Facilita a integração de sistemas legados.
+
+Desvantagens:
+ - Pode aumentar a complexidade do sistema.
+ - Pode introduzir sobrecarga se muitos Adapters forem necessários.
+
+
+6 - Qual princípio do SOLID é mais aplicado no padrão Adapter?
+
+Princípio da Responsabilidade Única (SRP): 
+o Adapter tem uma única responsabilidade, que é 
+converter a interface. Princípio de Substituição 
+de Liskov (LSP) também é respeitado: o Adapter 
+pode ser usado no lugar do Target.
+
+
+7 - Utilizando UML (diagrama de classes), 
+MODELE um Adapter que transforma diferentes 
+formatos de dados (XML, CSV, JSON) em um único formato padrão.
+
++---------------------+
+|   IDataParser       | (Interface)
+|-------------------  |
+| + parse(data): Data |
++---------------------+
+         ^
+         |
++---------------------+
+| XMLAdapter          |
+|---------------------|
+| + parse(data): Data |
++---------------------+
+
++---------------------+
+| CSVAdapter          |
+|---------------------|
+| + parse(data): Data |
++---------------------+
+
++---------------------+
+| JSONAdapter         |
+|-------------------  |
+| + parse(data): Data |
++---------------------+
+
++-------------------+
+| XMLLibrary        |
+|-------------------|
+| + parseXML(data)  |
++-------------------+
+
++-------------------+
+| CSVLibrary        |
+|-------------------|
+| + parseCSV(data)  |
++-------------------+
+
++-------------------+
+| JSONLibrary       |
+|-------------------|
+| + parseJSON(data) |
++-------------------+
+
+
+8 - Como o Adapter contribui para a manutenção de software legado?
+
+Ele permite que sistemas antigos (com interfaces diferentes) 
+sejam utilizados em sistemas novos sem que precisem ser modificados. 
+Assim, prolonga a vida útil do software legado, reduzindo custo de 
+reescrita e risco.
+
+
+9 - Dê um exemplo real de biblioteca/framework que usa o padrão Adapter.
+
+O Java API usa Adapter no java.util.Enumeration para Iterator. 
+Por exemplo, a classe EnumerationAdapter adapta objetos do tipo 
+Enumeration para Iterator.
+Outro exemplo é o Spring Framework, que usa Adapters para padronizar
+chamadas HTTP com HandlerAdapter.
+
+
+10 - Quando não usar o padrão Adapter? Justifique com exemplos.
+
+O Adapter não deve ser usado quando podemos modificar diretamente o código-fonte da classe,
+o que evita a complexidade extra e também quando o esforço para adaptar é maior que reescrever
+uma solução nativa. Um exemplo seria termos acesso ao código de uma API interna que precisa apenas
+de pequenas mudanças, sendo melhor ajustar diretamente a interface do que criar um Adapter desnecessário.
+
+
+
