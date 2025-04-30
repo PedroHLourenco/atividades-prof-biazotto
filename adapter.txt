@@ -1,5 +1,7 @@
 Atividade Design Pattern Adapter
 
+Pedro Henrique de Abreu Lourenço RA: 22014566-2
+
 1 - Explique com suas palavras o que é o padrão Adapter e qual problema ele resolve.
 
 O padrão Adapter é uma solução de design que permite
