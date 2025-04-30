@@ -1,0 +1,76 @@
+atividade gestão de projetos
+
+1 -  Defina o que é um cronograma segundo o PMBOK
+
+É uma representação gráfica ou tabular das atividades do projeto organizadas com base no tempo, incluindo datas de início, término, marcos e dependências. Ele é usado para orientar a execução, monitorar o progresso e controlar o tempo do projeto.
+
+
+2 - Liste e explique os processos de gerenciamento do cronograma
+
+ - Planejar o Gerenciamento do Cronograma – Define como o cronograma será planejado, desenvolvido, gerenciado e controlado.
+ - Definir as Atividades – Identifica e documenta as ações específicas a serem realizadas.
+ - Sequenciar as Atividades – Determina a ordem e as dependências entre as atividades.
+ - Estimar a Duração das Atividades – Determina o tempo necessário para completar cada atividade.
+ - Desenvolver o Cronograma – Elabora o cronograma com base nas durações, recursos e restrições.
+ - Controlar o Cronograma – Monitora o progresso e atualiza o cronograma conforme necessário.
+
+
+3 - Diferencie cronograma, linha de base do cronograma e plano de gerenciamento do 
+cronograma.
+
+ - Cronograma: Documento que apresenta a previsão de datas para início e término das atividades.
+ - Linha de Base do Cronograma: Versão aprovada do cronograma que serve como referência para medir o desempenho.
+ - Plano de Gerenciamento do Cronograma: Documento que define os critérios e procedimentos para o desenvolvimento, controle e atualização do cronograma.
+
+
+4 - O que é o caminho crítico (Critical Path) e qual sua importância? 
+ 
+Sequência de atividades que determina a menor duração possível do projeto. Ele não tem folgas e qualquer atraso em uma atividade do caminho crítico causará atraso no projeto. É essencial para a gestão do tempo e priorização de esforços.
+
+
+5 - Explique o conceito de folga total e folga livre em atividades. 
+
+ - Folga Total: Tempo que uma atividade pode ser atrasada sem afetar a data final do projeto.
+ - Folga Livre: Tempo que uma atividade pode ser atrasada sem afetar a data de início da próxima atividade sucessora.
+
+
+6 - Quais são as técnicas de estimativa de duração de tarefas segundo o PMBOK? 
+ 
+ - Estimativa Análoga: Baseada em projetos anteriores semelhantes.
+ - Estimativa Paramétrica: Usa dados históricos e variáveis mensuráveis.
+ - Estimativa Ascendente: Estima cada parte do trabalho detalhadamente e soma os valores.
+ - Estimativa de Três Pontos: Usa três estimativas (otimista, mais provável, pessimista) para calcular uma média ponderada.
+
+
+7 - O que é a técnica de três pontos e como ela é aplicada?
+
+A técnica de três pontos melhora a precisão da estimativa considerando incertezas:
+
+ - Estimativa Otimista (O)
+ - Estimativa Mais Provável (M)
+ - Estimativa Pessimista (P)
+   A fórmula mais comum (média ponderada PERT) é: Duração esperada = (𝑂 + 4𝑀 + 𝑃) / 6
+
+
+8 - Explique a diferença entre predecessor "Finish-to-Start" e "Start-to-Start". 
+
+ - Finish-to-Start (FS): A atividade sucessora começa somente após o término da predecessora (mais comum).
+ - Start-to-Start (SS): A atividade sucessora pode começar assim que a predecessora iniciar.
+
+
+9 - O que significa compressão do cronograma? 
+
+É o processo de reduzir a duração do cronograma sem alterar o escopo do projeto. As principais técnicas são:
+
+ - Crashing: Adiciona recursos para acelerar atividades.
+ - Fast Tracking: Executa atividades em paralelo.
+
+
+10 - Quais ferramentas e técnicas são usadas para desenvolver o cronograma?
+
+ - Análise de Rede do Cronograma
+ - Método do Caminho Crítico
+ - Método da Corrente Crítica
+ - Análise de Cenários "E se"
+ - Compressão de Cronograma
+ - Ferramentas de Software de Gerenciamento de Projetos
